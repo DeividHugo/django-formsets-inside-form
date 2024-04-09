@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-formsets-inside-form',
-    version='1.0',
+    version='0.1',
     description='A library to handle formsets within forms in Django',
     author='Deivid Hugo',
     author_email='deividhugoof@gmail.com',
