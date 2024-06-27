@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: django-formsets-inside-form
-Version: 0.1.4
+Version: 0.1.5
 Summary: A library to handle formsets within forms in Django
 Home-page: https://github.com/DeividHugo/django-formsets-inside-form
 Author: Deivid Hugo
@@ -47,6 +47,8 @@ To utilize this mixin, the form must declare its formsets within the `get_formse
 ```python
 from django import forms
 from django.db import transaction
+from django_formsets_inside_form import FormsetsInsideFormMixin
+
 
 class YourForm(FormsetsInsideFormMixin, forms.Form):
     # Your form fields go here

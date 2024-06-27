@@ -35,6 +35,8 @@ To utilize this mixin, the form must declare its formsets within the `get_formse
 ```python
 from django import forms
 from django.db import transaction
+from django_formsets_inside_form import FormsetsInsideFormMixin
+
 
 class YourForm(FormsetsInsideFormMixin, forms.Form):
     # Your form fields go here
