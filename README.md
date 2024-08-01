@@ -52,4 +52,4 @@ class YourForm(FormsetsInsideFormMixin, forms.Form):
 
 ## Conclusion
 
-The Formsets Inside Form Mixin provides a structured and integrated approach to manage inline formsets within Django forms. By encapsulating formsets management and atomic transactions handling, it promotes code organization, maintainability, and ensures data consistency during the form submission and saving process.
+The Formsets Inside Form Mixin provides a structured and integrated approach to manage inline formsets within Django forms. By encapsulating formsets management and atomic transactions handling, it promotes code organization, maintainability, and ensures data consistency during the form submission and saving process.# django-remote-form-helpers
