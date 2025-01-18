@@ -21,6 +21,14 @@ class FormsetsInsideFormMixin:
                 setattr(self, formset_name, formset)
         return self.formsets
 
+    def has_changed(self):
+        if super().has_changed():
+            return True
+
+        formsets = self.get_formsets(instance=self.instance).values()
+        
+        return any(formset.has_changed() for formset in formsets)
+
     def is_valid(self):
         if not super().is_valid():
             return False
